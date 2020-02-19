@@ -1,5 +1,6 @@
-### Code: 2536
-Test Plan: 4930
+
+#### Code: 2536
+#### Test Plan: 4930
 
 Following Test Plan
 -------------------
@@ -9,6 +10,8 @@ Following Test Plan
 There is a lack of consistency between the file names in the test plan and the actual files given. For example, test 3 refers to using `test3.txt`, yet `test03.txt` was provided. While this is not a major issue, in a larger project it could lead to a lot of confusion. Computer Science is a field of precision.
 
 What is the `sortTable` class? It is mentioned several times in your test plan but was not provided. Did you mean `TableSorter` class? Similarly, in section 2.2 you describe the `sortTable()` method, however, according to the interface given this method should be called `sortable()`.
+
+Lastly, there are a lot of extraneous files included in your test plan that are not mentioned at all in the Test Plan document. If the tester is to use these files somehow, that should be detailed in the Test Plan document. Because they were not addressed, they were not used to carry out the below tests.
 
 ### Test No. 1
 
@@ -87,6 +90,10 @@ While this test does execute as expected, this is not a test of the TableSorter 
 ### Test No. 8
 
 While this test does execute as expected, this is not a test of the TableSorter class. It is a test of the Table class and should not be a part of this test plan.
+
+### Test No. 9
+
+This test could not be executed because the file indicated could not be found. You provide a `Test08.txt` but the code provided for test 9 calls for `test8.txt`. However, even if the test was intended to use Test08.txt, it would be carrying out a test on the Table class instead of the TableSorter class.
 
 Overall Test Plan Effectiveness 
 --------------------------------
